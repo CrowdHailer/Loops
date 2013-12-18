@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var fruit = ['apples', 'banana', 'pears', 'oranges'];
+		//console.log(undefined == fruit[5]);
+		
+		var i=-1;
+		do {
+			var element = fruit[++i];
+			console.log(element);
+		} while (element != undefined)
+		
+		console.log('next');
+		
+		var i=0;
+		while (fruit[i] !== undefined) {
+			console.log(fruit[i++]);
+		}
+		
+		console.log('next');
+		
+		var i = 0;
+		while (true) {
+			var element = fruit[i++];
+			if(element != undefined){
+				console.log(element);
+			} else {
+				break;
+			}
+		}
+		
+		console.log('next');
+		
+		var i = 0;
+		element = true
+		while (element != undefined) {
+			var element = fruit[i++];
+			console.log(element);
+
+		}
+		
+		console.log('next WOOOOO');
+		
+		var i = 0;
+		element = fruit[i]
+		while (element != undefined) {
+			console.log(element);
+			var element = fruit[++i];
+		}
+	</script>
+</body>
+</html>
